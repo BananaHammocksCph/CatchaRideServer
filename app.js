@@ -13,7 +13,7 @@ const port = process.env.port || 3001;
 
 
 app.get('/',function(req, res){
-  res.send('Hello world!\n');
+  res.json('Hello world!\n');
 });
 
 app.use('/api', routes);
