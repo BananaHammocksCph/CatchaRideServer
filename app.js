@@ -11,9 +11,15 @@ app.use(cors());
 
 const port = process.env.port || 3001;
 
+
+app.get('/',function(res,req){
+  res.send('Hello world(test2)!\n');
+});
+
+app.use('/api', routes);
+
 app.listen(port , () => {
   console.log(`Server running on ${port}`);
 });
 
-app.use('/api', routes);
 module.exports = app;
