@@ -5,7 +5,8 @@ const router = express.Router();
 
 router.get("/", function(req, res) {
     res.json('hi');
-}
+});
+
 router.use('/booking', bookingRoutes);
 router.use('/ride-offers', rideOfferRoutes);
 
